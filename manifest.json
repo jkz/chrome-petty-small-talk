@@ -1,0 +1,17 @@
+{
+  "name": "Petty Small Talk",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Pad your emails with petty small talk.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://inbox.google.com/*",
+        "*://mail.google.com/*",
+      ],
+      "js": [
+        "content/petty-small-talk.js"
+      ]
+    }
+  ]
+}
